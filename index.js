@@ -14,8 +14,8 @@ function buildHistogram(magazine) {
 
 function canBuildNote(magazine, note) {
   return note.every(l => {
-    try(magazine[l]--) {
-      return true;
+    try {
+      magazine[l]--;
     } catch(e) {
       return false;
     }
