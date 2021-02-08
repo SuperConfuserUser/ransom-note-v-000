@@ -13,9 +13,10 @@ function buildHistogram(magazine) {
 }
 
 function canBuildNote(magazine, note) {
+  const histogram = buildHistogram(magazine);
   return note.split('').every(l => {
-    if (magazine[l] > 0) {
-      magazine[l]--;
+    if (histogram[l] > 0) {
+      histogram[l]--;
       return true;
     } else {
       return false;
