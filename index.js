@@ -16,6 +16,7 @@ function canBuildNote(magazine, note) {
   return note.split('').every(l => {
     try {
       magazine[l]--;
+      return true;
     } catch(e) {
       return false;
     }
