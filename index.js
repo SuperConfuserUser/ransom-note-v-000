@@ -1,7 +1,7 @@
-function buildHistogram() {
+function buildHistogram(magazine) {
   
 }
 
-function canBuildNote() {
+function canBuildNote(magazine, note) {
   
 }
