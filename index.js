@@ -1,12 +1,15 @@
 function buildHistogram(magazine) {
   const histogram = {};
-  return magazine.forEach(l => {
+  
+  magazine.forEach(l => {
     if (historgram[l]) {
       historgram[l]++;
     } else {
       historgram[l] = 1;
     }
-  })
+  });
+  
+  return historgram;
 }
 
 function canBuildNote(magazine, note) {
