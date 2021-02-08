@@ -9,7 +9,7 @@ function buildHistogram(magazine) {
     }
   });
   
-  return historgram;
+  return histogram;
 }
 
 function canBuildNote(magazine, note) {
