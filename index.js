@@ -1,3 +1,7 @@
 function buildHistogram() {
   
 }
+
+function canBuildNote() {
+  
+}
