@@ -14,10 +14,10 @@ function buildHistogram(magazine) {
 
 function canBuildNote(magazine, note) {
   return note.split('').every(l => {
-    try {
+    if (magazine[l] > 0) {
       magazine[l]--;
       return true;
-    } catch {
+    } else {
       return false;
     }
   })
