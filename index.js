@@ -17,7 +17,7 @@ function canBuildNote(magazine, note) {
     try {
       magazine[l]--;
       return true;
-    } catch(e) {
+    } catch {
       return false;
     }
   })
