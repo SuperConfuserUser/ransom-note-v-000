@@ -13,7 +13,7 @@ function buildHistogram(magazine) {
 }
 
 function canBuildNote(magazine, note) {
-  return note.every(l => {
+  return note.split('').every(l => {
     try {
       magazine[l]--;
     } catch(e) {
