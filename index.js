@@ -2,10 +2,10 @@ function buildHistogram(magazine) {
   const histogram = {};
   
   magazine.forEach(l => {
-    if (historgram[l]) {
-      historgram[l]++;
+    if (histogram[l]) {
+      histogram[l]++;
     } else {
-      historgram[l] = 1;
+      histogram[l] = 1;
     }
   });
   
